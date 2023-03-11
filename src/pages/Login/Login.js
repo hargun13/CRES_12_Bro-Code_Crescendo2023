@@ -5,6 +5,9 @@ import {FcGoogle } from 'react-icons/fc'
 
 
 const Login = () => {
+
+  
+
   return (
     <div className='h-screen w-full grid grid-cols-2 py-12'>
         <div className='col-span-1'>
