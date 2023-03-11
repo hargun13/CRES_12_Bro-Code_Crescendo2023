@@ -51,7 +51,7 @@ const Footer = () => {
             </ul>
         </div>
       </div>
-      <p className='text-center w-screen font-medium text-xl'>All Copyrights &copy;  Reserved 2023 <span className='text-[#9CCD62]'>Brand Name </span>Inc.</p>
+      <p className='text-center w-full font-medium text-xl'>All Copyrights &copy;  Reserved 2023 <span className='text-[#9CCD62]'>Brand Name </span>Inc.</p>
     </div>
   );
 };
