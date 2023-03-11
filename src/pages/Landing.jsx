@@ -9,6 +9,8 @@ import national from './img/national-cancer-institute-cw2Zn2ZQ9YQ-unsplash.jpg';
 import SS from './img/ss.png';
 import Footer from './Footer';
 
+import {Link} from 'react-router-dom';
+
 const Landing = () => {
     return(
         <main className='w-screen'>
@@ -19,8 +21,8 @@ const Landing = () => {
                 <h1 class="text-5xl text-[#3C3D42]">Brand Name</h1>
             </section>
             <section class="flex items-center gap-5">
-                <button class="w-40 h-16 rounded-full bg-[#9CCD62] ">Login</button>
-                <button class="w-40 h-16 rounded-full bg-[#9CCD62] ">Sign Up</button>
+                <button class="w-40 h-16 rounded-full bg-[#9CCD62] "><Link to='/Login' >Login</Link></button>
+                <button class="w-40 h-16 rounded-full bg-[#9CCD62] "><Link to='/Register'>Sign Up</Link></button>
             </section>
         </nav>
     </header>
