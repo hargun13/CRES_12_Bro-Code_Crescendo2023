@@ -4,6 +4,7 @@ import {BsCalendar} from 'react-icons/bs'
 import DropDown from './DropDown';
 import SideBar from './SideBar';
 import DashComp from './DashComp';
+import man from './man.jpg'
 
 
 
@@ -30,7 +31,7 @@ const Dash_Navbar = () => {
                 <div className='flex'>
                     <a><span className='p-1 px-3  cursor-pointer'><BiBell  className='mx-5'/></span></a>
                     <a><span className='p-1 px-3 cursor-pointer'><BsCalendar className='mx-5'/></span></a>
-                    <a><span className='p-1 px-3 cursor-pointer'><img src='./man.png'  className='mx-5'/></span></a>
+                    <a><span className='p-1 px-3 cursor-pointer'><img src={man}  className='mx-5 w-6 h-6 rounded-full'/></span></a>
                     <a><span className='p-1 px-3 cursor-pointer'><DropDown /></span></a>
                 </div>
             </div>

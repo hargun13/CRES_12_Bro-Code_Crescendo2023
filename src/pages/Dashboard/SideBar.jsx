@@ -7,7 +7,7 @@ import { FcSettings } from 'react-icons/fc'
 
 const SideBar = () => {
   return (
-    <div className='flex flex-col items-center justify-center'>
+    <div className='flex flex-col items-center justify-center h-full'>
         <GrHomeRounded className='h-6 w-6'/>
         <p className='text-center pb-10'>Home</p>
         <TbWorld className='h-6 w-6 '/>
