@@ -13,7 +13,7 @@ import {Link} from 'react-router-dom';
 
 const Landing = () => {
     return(
-        <main className='w-screen'>
+        <main className='w-full'>
             <header>
         <nav class=" bg-[#FFFFFF] h-32 flex justify-between p-5 shadow-lg">
             <section class="flex items-center gap-5">
@@ -22,11 +22,11 @@ const Landing = () => {
             </section>
             <section class="flex items-center gap-5">
                 <button class="w-40 h-16 rounded-full bg-[#9CCD62] "><Link to='/Login' >Login</Link></button>
-                <button class="w-40 h-16 rounded-full bg-[#9CCD62] "><Link to='/Register'>Sign Up</Link></button>
+                <button class="w-40 h-16 rounded-full bg-[#9CCD62] "><Link to=' /Register'>Sign Up</Link></button>
             </section>
         </nav>
     </header>
-            <div class="my-24 pl-20">
+            <div class="my-24 px-20">
                 <section class="flex flex-col gap-20">
                     <h1 class="font-bold text-3xl">Keeping you Healthy!</h1>
                     <p class="text-lg w-1/3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aliquid rerum, soluta esse voluptatem totam incidunt magnam, nisi iure maiores cum ex delectus assumenda porro?</p>

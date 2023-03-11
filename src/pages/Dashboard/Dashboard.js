@@ -4,8 +4,6 @@ import { UserAuth } from '../../context/AuthContext'
 
 const Dashboard = () => {
 
-    
-
   return (
     <div>
         <Dash_Navbar />

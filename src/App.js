@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import {Route, Routes} from 'react-router-dom'
 import { AuthContextProvider } from './context/AuthContext';
 import ProtectedRoute from './ProtectedRoute';
+import Doctors from './pages/Doctors/Doctors';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                   <ProtectedRoute>
                     <Dashboard />
                   </ProtectedRoute>} />
+          <Route path='/Doctors' element={<Doctors />} />
         </Routes>
       </AuthContextProvider>
 

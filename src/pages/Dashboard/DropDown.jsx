@@ -31,7 +31,7 @@ const DropDown = () => {
         {
             name: "Logout",
             link:"",
-            function:"handleLogout"
+            function: handleLogout
         }
     ]
 
@@ -46,10 +46,11 @@ const DropDown = () => {
         <div class="absolute rounded-2xl  hidden group-hover:block group-hover:-mx-16">   
             <div class="  bg-white shadow-lg rounded-2xl   w-28 ">
 
-      
+            {drop_data.map(data => (
             <div class="px-4 text-gray-600 hover:rounded-xl hover:bg-[#E0DDCA] font-bold text-sm py-4  cursor-pointer" onClick={handleLogout}>
-                <button onClick={handleLogout}>Logout</button>
+                <button onClick={data.function}>{data.name}</button>
             </div>
+            ))}
          
             
 
