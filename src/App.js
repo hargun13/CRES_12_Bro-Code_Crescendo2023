@@ -7,7 +7,9 @@ import Dashboard from './pages/Dashboard/Dashboard';
 function App() {
   return (
     <div className="App">
-      <Dashboard />
+      <Routes>
+        <Route path='/' />
+      </Routes>
     </div>
   );
 }
