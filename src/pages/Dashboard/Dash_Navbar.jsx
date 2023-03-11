@@ -1,19 +1,17 @@
 import React,{useState} from 'react';
 import {BiBell} from 'react-icons/bi';
 import {BsCalendar} from 'react-icons/bs'
+import man from './man.png'
 import DropDown from './DropDown';
 import SideBar from './SideBar';
 import DashComp from './DashComp';
+import { UserAuth } from '../../context/AuthContext';
 
 
 
 const Dash_Navbar = () => {
 
-    const [nav,setNav] = useState(false);
-
-    const handleNav =()=>{
-        setNav(!nav);
-    };
+    const {user , logout} = UserAuth();
 
   return (
     <div className='flex '>
@@ -24,13 +22,14 @@ const Dash_Navbar = () => {
         <div className='w-full mx-10'>
 
             <div className='text- flex justify-between px-5 p-3 h-20 items-center'>
-                <div>
-                    <h1 className='text-4xl'><span className='text-[#9CCD62]'>Hi</span>, James</h1>
+                <div className='flex items-center justify-center'>
+                    <h1 className='text-4xl pr-5 text-[#9CCD62]'>Hi</h1>
+                    <p className='text-2xl text-gray-500'>{user && user.email}</p>
                 </div>
                 <div className='flex'>
                     <a><span className='p-1 px-3  cursor-pointer'><BiBell  className='mx-5'/></span></a>
                     <a><span className='p-1 px-3 cursor-pointer'><BsCalendar className='mx-5'/></span></a>
-                    <a><span className='p-1 px-3 cursor-pointer'><img src='./man.png'  className='mx-5'/></span></a>
+                    <a><span className='p-1 px-3 cursor-pointer'><img src={man}  className='mx-5 h-6 w-6 rounded-full'/></span></a>
                     <a><span className='p-1 px-3 cursor-pointer'><DropDown /></span></a>
                 </div>
             </div>
