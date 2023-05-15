@@ -13,35 +13,35 @@ export default  [
         image:doctor,
         name: "Dr. Bhavya Poddar",
         specialization: "Radiologist",
-        link: "" 
+        link: "https://calendly.com/hargun_singh/40min" 
     },
 
     {
         image:doctor,
         name: "Dr. Shabbir Rangwala",
         specialization: "Dermatologist",
-        link: "" 
+        link: "https://calendly.com/hargun_singh/40min" 
     },
 
     {
         image:doctor,
         name: "Dr. Hargun Singh",
         specialization: "Pediatrics",
-        link: "" 
+        link: "https://calendly.com/hargun_singh/40min" 
     },
 
     {
         image:doctor,
         name: "Dr. Keyur Parmar ",
         specialization: "Orthopedic",
-        link: "" 
+        link: "https://calendly.com/hargun_singh/40min" 
     },
 
     {
         image:doctor,
         name: "Dr. Rohit Roy",
         specialization: "Physician",
-        link: "" 
+        link: "https://calendly.com/hargun_singh/40min" 
     },
 
 
